@@ -10,3 +10,5 @@ vim.api.nvim_create_user_command("Fmt", function(args)
 	end
 	require("conform").format({ async = true, lsp_format = "fallback", range = range })
 end, { range = true })
+vim.o.tabstop = 3
+vim.o.shiftwidth = 3
